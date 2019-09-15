@@ -145,16 +145,6 @@ def get_review(message):
     keyboard2 = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
     keyboard2.add('Закончить отзыв')
     bot.send_message(message.chat.id, "Спасибо! Если есть что добавить, можно это сделать сейчас. Если нет - нажми \"Закончить отзыв\".", reply_markup=keyboard2)
-    
-
-@bot.message_handler(content_types=['text'])
-def send_text(message):
-    if message.text.lower() == 'привет':
-        bot.send_message(message.chat.id, 'Привет, посетитель!')
-    elif message.text.lower() == 'пока':
-        bot.send_message(message.chat.id, 'Прощай, посетитель')
-    elif message.text.lower() == 'я тебя люблю':
-        bot.send_sticker(message.chat.id, 'CAADAgADZgkAAnlc4gmfCor5YbYYRAI')
 
 
 if __name__ == "__main__":
