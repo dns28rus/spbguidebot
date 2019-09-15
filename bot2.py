@@ -5,6 +5,7 @@ import requests
 import config
 import dbworker
 import time
+from telebot import TeleBot, types
 
 bot = telebot.TeleBot(config.token)
 
