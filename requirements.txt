@@ -1,0 +1,8 @@
+certifi==2019.9.11
+chardet==3.0.4
+Cython==0.29.13
+idna==2.8
+requests==2.7.0
+telebot==0.0.3
+urllib3==1.25.3
+vedis==0.7.1
